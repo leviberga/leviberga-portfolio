@@ -4,6 +4,7 @@ import "./globals.css";
 import Explorer from "../components/Explorer";
 import Editor from "../components/Editor";
 import DesktopOnlyGuard from "../components/DesktopOnlyGuard";
+import { LanguageProvider } from "../components/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,14 +36,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} font-orbitron antialiased bg-[#0b0e17] text-[#cccccc] h-screen flex overflow-hidden`}
         >
-        <DesktopOnlyGuard>
-          <Explorer />
-          <div className="flex-1 h-full">
-            <Editor>
-              {children}
-            </Editor>
-          </div>
-        </DesktopOnlyGuard>
+        <LanguageProvider>
+          <DesktopOnlyGuard>
+            <Explorer />
+            <div className="flex-1 h-full">
+              <Editor>
+                {children}
+              </Editor>
+            </div>
+          </DesktopOnlyGuard>
+        </LanguageProvider>
       </body>
     </html>
   );

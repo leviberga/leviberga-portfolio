@@ -1,9 +1,11 @@
 "use client";
 import { useState } from 'react';
 import { Github, Linkedin } from 'lucide-react';
+import { useLanguage } from '../../components/LanguageContext';
 
 export default function Contact() {
   const [mousePos, setMousePos] = useState({ x: -200, y: -200 });
+  const { t } = useLanguage();
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -30,26 +32,24 @@ export default function Contact() {
           }}
         />
         <div className="p-6 relative z-10">
-          <h2 className="text-xl font-semibold text-[#82aaff] mb-6">Contact</h2>
+          <h2 className="text-xl font-semibold text-[#82aaff] mb-6">{t('contactTitle')}</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-sm font-mono text-[#cccccc] mb-2">Email</p>
+              <p className="text-sm font-mono text-[#cccccc] mb-2">{t('email')}</p>
               <p className="text-[#82aaff] font-mono">lbergamascki@gmail.com</p>
             </div>
             <div>
-              <p className="text-sm font-mono text-[#cccccc] mb-2">Email suggestion</p>
+              <p className="text-sm font-mono text-[#cccccc] mb-2">{t('emailSuggestion')}</p>
               <div className="border border-[#1A2137] rounded p-3 font-mono text-sm text-[#cccccc]">
-                <p><span className="text-[#82aaff]">Subject:</span> Contact via portfolio</p>
-                <p className="mt-2">Hi Levi,</p>
-                <p>I wanted to get in touch regarding...</p>
-                <p className="text-[#666]">...</p>
+                <p><span className="text-[#82aaff]">Subject:</span> {t('emailSubject')}</p>
+                <p className="mt-2">{t('emailBody')}</p>
               </div>
             </div>
             <a
               href="mailto:lbergamascki@gmail.com?subject=Contact%20via%20portfolio"
               className="w-full bg-transparent border border-[#82aaff]/70 text-[#82aaff] hover:bg-[#82aaff]/20 hover:text-[#82aaff] py-2 px-3 rounded-lg text-sm text-center transition-all backdrop-blur-sm block"
             >
-              Send Email
+              {t('sendEmail')}
             </a>
           </div>
         </div>

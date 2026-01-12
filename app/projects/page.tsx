@@ -2,46 +2,43 @@
 import { useState } from 'react';
 import TechBadge from '../../components/TechBadge';
 import Image from 'next/image';
+import { useLanguage } from '../../components/LanguageContext';
 
 export default function Projects() {
+  const { t } = useLanguage();
   const projects = [
     {
       name: "Personal Portfolio",
-      description: "A modern, responsive portfolio website showcasing projects and skills, built with Next.js.",
+      description: t('project1Desc'),
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shiki"],
-      deploymentLink: "https://leviportfolio.vercel.app",
-      repositoryLink: "https://github.com/levi/portfolio",
+      repositoryLink: "https://github.com/leviberga/leviberga-portfolio",
       imageName: "personalportfolio.png",
     },
     {
       name: "FinYou",
-      description: "Full-stack personal finance solution with user authentication, income and expense tracking, balance and financial history visualization.",
+      description: t('project2Desc'),
       technologies: ["Java", "Servlet/JSP", "JDBC", "Oracle Database", "HTML", "CSS", "Bootstrap"],
-      deploymentLink: "https://myecommerce.vercel.app",
       repositoryLink: "https://github.com/leviberga/FinYou",
       imageName: "finyou.png",
     },
     {
       name: "ESG Resíduos API",
-      description: "RESTful API for managing collection points and collection records (topic: Waste Management and Recycling).",
+      description: t('project3Desc'),
       technologies: ["Java", "Spring Boot", "PLSQL", "Oracle Database", "Flyway", "Docker"],
-      deploymentLink: "https://taskapi.herokuapp.com",
       repositoryLink: "https://github.com/leviberga/esg-residuos",
       imageName: "esgresiduos.png",
     },
     {
       name: "AcionaApp",
-      description: "A native Android application created to transform and modernize communication between citizens and emergency services, using real-time geolocation to speed up response times and save lives.",
+      description: t('project4Desc'),
       technologies: ["Kotlin", "Jetpack Compose", "SQLite"],
-      deploymentLink: "https://discord.com/oauth2/authorize?client_id=123456789",
       repositoryLink: "https://github.com/leviberga/acionaApp",
       imageName: "acionaapp.png",
     },
     {
       name: "World Trade Center Chat App",
-      description: "This is an Android project (Kotlin/Gradle) that provides clear, transparent, and optimized communication, as well as shortcuts and commands that facilitate this process.",
+      description: t('project5Desc'),
       technologies: ["Kotlin", "Jetpack Compose", "Firebase"],
-      deploymentLink: "https://discord.com/oauth2/authorize?client_id=123456789",
       repositoryLink: "https://github.com/leviberga/wtc-chat_ChallengeFIAP",
       imageName: "wtc-chat.png",
     },
@@ -109,7 +106,7 @@ export default function Projects() {
                      hover:bg-[#82aaff]/20 hover:text-[#82aaff]
                      py-2 px-3 rounded-lg text-sm text-center transition-all backdrop-blur-sm"
         >
-          Source Code
+          {t('sourceCode')}
         </a>
       )}
     </div>

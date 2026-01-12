@@ -1,10 +1,12 @@
 "use client";
 import { useState, useRef, useEffect } from 'react';
+import { useLanguage } from '../components/LanguageContext';
 
 export default function Home() {
   const [mousePos, setMousePos] = useState({ x: -200, y: -200 });
   const containerRef = useRef<HTMLDivElement>(null);
   const [containerSize, setContainerSize] = useState({ width: 1000, height: 600 });
+  const { t } = useLanguage();
 
   useEffect(() => {
     if (containerRef.current) {
@@ -57,7 +59,7 @@ export default function Home() {
             textShadow: `0 0 15px rgba(130, 170, 255, ${glowOpacity * 0.8})`,
           }}
         >
-          fullstack developer portfolio
+          {t('subtitle')}
         </p>
         <div
           className="space-y-2 text-sm font-orbitron text-[#cccccc]"
@@ -66,7 +68,7 @@ export default function Home() {
           }}
         >
           <div>
-            <span className="text-[#007acc]">Go to File</span> → Select a file to view
+            <span className="text-[#007acc]">{t('gotoFile')}</span> → {t('selectFile')}
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ export default function Home() {
             textShadow: `0 0 15px rgba(130, 170, 255, ${glowOpacity * 0.8})`,
           }}
         >
-          fullstack developer portfolio
+          Fullstack Developer Portfolio
         </p>
         <div
           className="space-y-2 text-sm font-orbitron text-[#cccccc]"

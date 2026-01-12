@@ -38,7 +38,7 @@ export default function Editor({ children }: EditorProps) {
           />
         ))}
       </div>
-      <div className="h-full overflow-auto bg-[#1e1e1e]">
+      <div className="h-full overflow-auto bg-[#0b0e17]">
         {children}
       </div>
     </div>

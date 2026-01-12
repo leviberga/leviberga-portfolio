@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
 import Explorer from "../components/Explorer";
 import Editor from "../components/Editor";
+import DesktopOnlyGuard from "../components/DesktopOnlyGuard";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,12 +35,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} font-orbitron antialiased bg-[#0b0e17] text-[#cccccc] h-screen flex overflow-hidden`}
         >
-        <Explorer />
-        <div className="flex-1 h-full">
-          <Editor>
-            {children}
-          </Editor>
-        </div>
+        <DesktopOnlyGuard>
+          <Explorer />
+          <div className="flex-1 h-full">
+            <Editor>
+              {children}
+            </Editor>
+          </div>
+        </DesktopOnlyGuard>
       </body>
     </html>
   );

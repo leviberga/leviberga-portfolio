@@ -23,7 +23,7 @@ export const translations = {
         "with frontend teams and understand the full product flow.",
 
   // Current Role
-  currentPosition: "Young Apprentice Developer at Mercado Pago",
+  currentPosition: "Software Developer at Mercado Pago",
 
   // Core Interests
   mainInterests: [
@@ -57,7 +57,7 @@ interface Experience {
 export const workExperience: readonly Experience[] = [
   {
     company: "Mercado Pago",
-    position: "Young Apprentice Developer",
+    position: "Software Developer",
     duration: "May, 2025 - Present",
     description: "Develop web systems focused on optimizing internal processes such as Quality Assurance " +
       "and integration with partner systems. Actively involved in building tools that improve " +
@@ -66,7 +66,7 @@ export const workExperience: readonly Experience[] = [
   },
   {
     company: "Drivere",
-    position: "Fullstack Developer",
+    position: "Co-founder and Fullstack Developer",
     duration: "Dec, 2025 - Present",
     description: "Co-founded and currently developing Drivere, a platform that connects aspiring drivers with " +
       "DETRAN-licensed instructors. Participate in the entire software development lifecycle, " +
@@ -116,7 +116,7 @@ export const workExperience: readonly Experience[] = [
         "com equipes frontend e entender o fluxo completo do produto.",
 
   // Cargo Atual
-  currentPosition: "Desenvolvedor Jovem Aprendiz no Mercado Pago",
+  currentPosition: "Desenvolvedor de Software no Mercado Pago",
 
   // Interesses Principais
   mainInterests: [
@@ -150,7 +150,7 @@ interface Experience {
 export const workExperience: readonly Experience[] = [
   {
     company: "Mercado Pago",
-    position: "Desenvolvedor Jovem Aprendiz",
+    position: "Desenvolvedor de Software",
     duration: "Maio, 2025 - Presente",
     description: "Desenvolver sistemas web focados em otimizar processos internos como Garantia de Qualidade " +
       "e integração com sistemas parceiros. Ativamente envolvido na construção de ferramentas que melhoram " +
@@ -159,7 +159,7 @@ export const workExperience: readonly Experience[] = [
   },
   {
     company: "Drivere",
-    position: "Desenvolvedor Fullstack",
+    position: "Co-fundador e Desenvolvedor Fullstack",
     duration: "Dez, 2025 - Presente",
     description: "Co-fundou e atualmente desenvolvendo Drivere, uma plataforma que conecta aspirantes a motoristas com " +
       "instrutores licenciados pelo DETRAN. Participar de todo o ciclo de vida do desenvolvimento de software, " +

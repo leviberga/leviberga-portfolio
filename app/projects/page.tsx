@@ -22,9 +22,16 @@ export default function Projects() {
       imageName: "finyou.png",
     },
     {
+    name: "Fluxpay API",
+    description: t('projectFluxpayDesc'),
+    technologies: ["Java", "Spring Boot", "JPA/Hibernate", "PostgreSQL", "Flyway", "Docker", "JUnit 5", "Mockito", "REST API"],
+    repositoryLink: "https://github.com/leviberga/fluxpay",
+    imageName: "fluxpay.png",
+    },
+    {
       name: "ESG Resíduos API",
       description: t('project3Desc'),
-      technologies: ["Java", "Spring Boot", "PLSQL", "Oracle Database", "Flyway", "Docker"],
+      technologies: ["Java", "Spring Boot", "PLSQL", "Oracle Database", "Flyway", "Docker", "REST API"],
       repositoryLink: "https://github.com/leviberga/esg-residuos",
       imageName: "esgresiduos.png",
     },

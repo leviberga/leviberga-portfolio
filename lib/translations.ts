@@ -85,6 +85,7 @@ export const workExperience: readonly Experience[] = [
     project3Desc: "RESTful API for managing collection points and collection records (topic: Waste Management and Recycling).",
     project4Desc: "A native Android application created to transform and modernize communication between citizens and emergency services, using real-time geolocation to speed up response times and save lives.",
     project5Desc: "This is an Android project (Kotlin/Gradle) that provides clear, transparent, and optimized communication, as well as shortcuts and commands that facilitate this process.",
+    projectFluxpayDesc: "FluxPay is a RESTful payment API built with Java 21 and Spring Boot 3, simulating financial transfers between users with real business rules. It features external authorization integration, custom exception handling, and full input validation.",
 
     // Contact
     contactTitle: "Contact",
@@ -178,6 +179,7 @@ export const workExperience: readonly Experience[] = [
     project3Desc: "API RESTful para gerenciar pontos de coleta e registros de coleta (tópico: Gestão de Resíduos e Reciclagem).",
     project4Desc: "Um aplicativo Android nativo criado para transformar e modernizar a comunicação entre cidadãos e serviços de emergência, usando geolocalização em tempo real para acelerar os tempos de resposta e salvar vidas.",
     project5Desc: "Este é um projeto Android (Kotlin/Gradle) que fornece comunicação clara, transparente e otimizada, bem como atalhos e comandos que facilitam esse processo.",
+    projectFluxpayDesc: "FluxPay é uma API REST de pagamentos construída com Java 21 e Spring Boot 3, simulando transferências financeiras entre usuários com regras de negócio reais. Conta com integração a um serviço externo de autorização, tratamento de exceções customizado e validação completa de entrada de dados.",
 
     // Contact
     contactTitle: "Contato",

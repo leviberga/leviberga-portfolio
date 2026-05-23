@@ -58,21 +58,11 @@ export const workExperience: readonly Experience[] = [
   {
     company: "Mercado Pago",
     position: "Software Developer",
-    duration: "May, 2025 - Present",
+    duration: "Apr, 2025 - Present",
     description: "Develop web systems focused on optimizing internal processes such as Quality Assurance " +
       "and integration with partner systems. Actively involved in building tools that improve " +
       "operational efficiency, data validation, and system reliability within a large-scale payments environment.",
     technologies: ["Java", "Spring Boot", "React", "TypeScript", "Python"]
-  },
-  {
-    company: "Drivere",
-    position: "Co-founder and Fullstack Developer",
-    duration: "Dec, 2025 - Present",
-    description: "Co-founded and currently developing Drivere, a platform that connects aspiring drivers with " +
-      "DETRAN-licensed instructors. Participate in the entire software development lifecycle, " +
-      "from product definition and system design to implementation and deployment, focusing on " +
-      "scalable architecture and secure integrations.",
-    technologies: ["React", "TypeScript", "Java", "Spring Boot", "AWS", "Docker", "PostgreSQL"]
   }
 ] as const;
 
@@ -157,16 +147,6 @@ export const workExperience: readonly Experience[] = [
       "e integração com sistemas parceiros. Ativamente envolvido na construção de ferramentas que melhoram " +
       "a eficiência operacional, validação de dados e confiabilidade do sistema em um ambiente de pagamentos de grande escala.",
     technologies: ["Java", "Spring Boot", "React", "TypeScript", "Python"]
-  },
-  {
-    company: "Drivere",
-    position: "Co-fundador e Desenvolvedor Fullstack",
-    duration: "Dez, 2025 - Presente",
-    description: "Co-fundou e atualmente desenvolvendo Drivere, uma plataforma que conecta aspirantes a motoristas com " +
-      "instrutores licenciados pelo DETRAN. Participar de todo o ciclo de vida do desenvolvimento de software, " +
-      "desde definição de produto e design de sistema até implementação e implantação, focando em " +
-      "arquitetura escalável e integrações seguras.",
-    technologies: ["React", "TypeScript", "Java", "Spring Boot", "AWS", "Docker", "PostgreSQL"]
   }
 ] as const;
 
